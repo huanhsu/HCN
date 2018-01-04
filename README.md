@@ -21,7 +21,7 @@ Results can be reproduced as follows:
 |IDE_ResNet_50  + XQDA + re-ranking     | 38.1% | 40.3%|34.7% | 37.4%|
 
 ## Training HCN
-- Replace original network definition and solver files in `models/target_database/` to [CUHK03_labeled](https://github.com/huanhsu/HCN/tree/master/HCN/CUHK03_labeled), [CUHK03_detected](https://github.com/huanhsu/HCN/tree/master/HCN/CUHK03_detected)or [Market1501](https://github.com/huanhsu/HCN/tree/master/HCN/Market1501)
+- Replace original network definition and solver files in `models/target_database/` to [CUHK03_labeled](https://github.com/huanhsu/HCN/tree/master/HCN/CUHK03_labeled), [CUHK03_detected](https://github.com/huanhsu/HCN/tree/master/HCN/CUHK03_detected) or [Market1501](https://github.com/huanhsu/HCN/tree/master/HCN/Market1501)
 - Modify `-solver` to the path of target solver in `experiments/target_database/target_database.sh`
 - Run training script
 - Modify `model =` to the path of `HCN_test.prototxt` in `evaluation/target_database_extract_feature.m`
